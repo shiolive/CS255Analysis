@@ -1,0 +1,70 @@
+CS 255 System Design Document
+
+This template lays out all the different sections that you need to complete for Project Two. Each section has guidance to prompt your thinking. You will need to continually reference the interview transcript as you work to make sure that you are addressing your client’s needs. There is no required length for the final document. Instead the goal is to complete each section based on what your client’s needs are. Remove this note when you are finished, and replace all bracketed text with the relevant information.
+
+UML Diagrams
+
+UML Use Case Diagram 
+
+
+
+
+
+
+UML Activity Diagrams
+
+
+ 
+
+
+
+
+
+
+
+
+UML Sequence Diagram
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UML Class Diagram
+ 
+Technical Requirements
+
+Hardware Requirements:
+•	Physical server
+•	Computer Setup for all admin users
+•	Internet source
+•	Phone line connection
+•	Power source
+
+Software Requirements:
+•	Windows operating system
+•	DriverPass software
+•	Cloud based security software for client storage
+
+Infrastructure:
+•	Cloud server provider 
+
+
+Tools:
+•	Development environment
+•	Internet connection
+•	IT admin tools
+
+
