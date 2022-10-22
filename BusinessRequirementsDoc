@@ -1,0 +1,110 @@
+CS 255 Business Requirements Document Template
+
+System Background
+What does DriverPass want the system to do? What is the problem they want to fix? What are the different components needed for this system?
+•	DriverPass identified a lack of drivers training available to new drivers to help prepare them for their DMV test, causing too many failed drivers test.
+•	They want accessible drivers training for all students in a format that allows them to take online classes, practice tests, and reserve driving lessons at a time that works best for them so they are prepared for their driving test.
+
+Objectives and Goals
+What should this system be able to do when it is completed? What measurable tasks need to be included in the system design to achieve this?
+•	Make the system accessible online from any device 
+•	Allow DriverPass employees to be able to download content for use offline
+•	The system should keep record of changes made to appointments.
+•	An online reservation system to allow customers to schedule driving lessons. 
+o	The system would track which car and driver the customer is assigned to
+o	Employees would be able to make appointments for the customers
+o	Customers can purchase different choices of packages
+o	DriverPass can customize these packages as needed
+•	Regularly notify DriverPass of DMV driver requirement changes
+•	System must run over the cloud with little security maintenance
+
+Requirements
+Nonfunctional Requirements
+In this section, you will detail the different nonfunctional requirements for the DriverPass system. You will need to think about the different things that the system needs to function properly.
+
+Performance Requirements
+What environments (web-based, application, etc.) does this system need to run in? How fast should the system run? How often should the system be updated?
+•	The system will need to run in a web based environment that is compatible with all common web browsers
+•	The system should have a quick response time, under 30 seconds
+•	The system should automatically receive updates from the DMV on changes in driver training requirements and notify the admin immediately.
+
+Platform Constraints
+What platforms (Windows, Unix, etc.) should the system run on? Does the back end require any tools, such as a database, to support this application?
+•	The platform should run on Windows operating system primarily
+•	The backend database should handle course materials and updates, user profiles, user progress, DMV update data, billing information, appointment schedules, and driver/car tracking.
+
+Accuracy and Precision
+How will you distinguish between different users? Is the input case-sensitive? When should the system inform the admin of a problem?
+•	Each user will have a unique user ID number, user name, and password to allow the user to log into their account and allow the admin to locate the correct user
+•	The user password is case sensitive and allowed to be changed by user if needed
+•	The user name is not case sensitive and is not changeable
+•	If any system errors are logged, the IT admin for the system will receive a notification immediately with the error code
+•	If a user experiences any system issues, there will be a link to report a problem at the bottom of the page
+
+Adaptability 
+Can you make changes to the user (add/remove/modify) without changing code? How will the system adapt to platform updates? What type of access does the IT admin need? 
+•	The system will allow admin to add, remove, and modify user accounts without modifying the source code
+•	User accounts will not have a limit in quantity
+•	IT admin will have admin access to the system and will be able to modify all account types
+•	The system will allow for automatic Microsoft updates. If any significant changes are required due to platform changes, IT admin will adapt ahead of time so there is no break in service
+•	IT admin will be able to modify the system by adding features to it and fixing errors
+Security
+What is required for the user to log in? How can you secure the connection or the data exchange between the client and the server? What should happen to the account if there is a “brute force” hacking attempt? What happens if the user forgets their password? 
+•	Each user (customer or admin) will have a unique username and password to log into their account
+•	The connection or data exchange between the client or the server will be protected using SSL encryption
+•	The system will continuously stay up to date with industry standards in security to protect user information
+•	If a user fails to input the correct password 3 times, the account will be locked and there will be a message displayed saying they must contact the system admin to validate and reset their account.
+•	If a “brute force” hacking attempt occurs, the system will place a lock on the users account that must be unlocked only by IT admin after validating the account
+•	If any user forgets their password, they can access a forgot password link that allows them to enter their username and email. The system will send an automatic email once prompted with a link to reset the user password.
+
+Functional Requirements
+Using the information from the scenario, think about the different functions the system needs to provide. Each of your bullets should start with “The system shall . . .” For example, one functional requirement might be, “The system shall validate user credentials when logging in.”
+•	The system shall validate log in credentials (user name and password) prior to granting access to unique account 
+•	The system shall provide customer users the ability to review driving package options, set up billing information and select package to purchase, schedule driving lessons, cancel or modify upcoming appointments, review progress for driving courses enrolled in, take practice exams, access study materials, and download study content to review offline.
+•	The system shall email both customer and driving instructor a confirmation when appointment has been scheduled.
+•	The system shall allow admin users to adjust driving package options, add /modify appointments on behalf of customers, view appointment schedules, view user progress, add more instructors/new cars, and download content and schedules for review offline
+•	The system shall send emailed receipts to the customer when they purchase a driving package
+•	The system shall have a usage and error log printable for IT and admin only
+
+
+User Interface
+What are the needs of the interface? Who are the different users for this interface? What will each user need to be able to do through the interface? How will the user interact with the interface (mobile, browser, etc.)? 
+•	The customer user interface will have the following features:
+o	Log in information, i.e., enter username and password
+o	Change Password
+o	Schedule appointment link
+o	Online Test Progress
+o	Customer information (Full name, address, email, phone number) with an option to modify customer info if needed
+o	Driver notes with assigned driving instructor displayed
+o	Special needs for the user
+o	Photo of driving instructor
+o	Photo of student
+o	Link to online training materials (Open in new tab)
+•	The admin user interface will have the following features:
+o	View all driving instructors by name
+o	View specific driving instructor schedule
+o	View all students by name
+o	View specific student progress and schedule
+o	Change student account info
+o	Schedule appointments
+o	Add new driving instructor
+o	Add new vehicle available
+o	Modify driving package options
+•	The users will be able to interact with the interface through touch or keyboard/mouse
+•	The user interface will be browser based with mobile browser capability
+
+Assumptions
+What things were not specifically addressed in your design above? What assumptions are you making in your design about the users or the technology they have? 
+•	Users have access to internet capable devices
+•	The cloud-based server is capable of handling the bandwidth of all users and is scalable
+•	DriverPass has staff to fill each role assigned in the system
+•	DMV has ability to push notifications on drivers training requirement changes
+
+Limitations
+Any system you build will naturally have limitations. What limitations do you see in your system design? What limitations do you have as far as resources, time, budget, or technology?
+•	Because the system is web-based, the real-time processing and notifications require quality internet access and high functioning servers
+•	Because the system is Windows based, the security may be limited to the capability of the windows system
+
+Gantt Chart
+Please include a screenshot of the GANTT chart that you created with Lucidchart. Be sure to check that it meets the plan described by the characters in the interview.
+
